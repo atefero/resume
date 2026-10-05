@@ -1,0 +1,4 @@
+body { font-family: "Open Sans", Arial, sans-serif; }
+h1,h2,h3 { font-family: Arimo, Arial, sans-serif; text-transform: none; }
+.aside li::before { display: none; }
+.blocks { break-inside: avoid; }

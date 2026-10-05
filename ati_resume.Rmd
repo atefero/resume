@@ -1,0 +1,119 @@
+---
+title: ati_resume
+author: Ati Rostami
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['resume', 'css/application_fonts.css', 'css/styles_html.css', 'css/custom_resume.css']
+    #css: ['css/custom_resume.css', 'css/styles_pdf.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+params:
+  doctype: "HTML" # "PDF" or "HTML" is automatically updated in update_resume.R 
+knit: pagedown::chrome_print # uncomment to print as pdf
+
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+#load packages
+library(glue)
+
+#source helper functions
+source('helper_functions.R')
+
+
+# get data from xlsx file
+# position_data <- readxl::read_excel('resume_data.xlsx',
+#                                     sheet = "positions",
+#                                     na = c("", "NA", "na"))
+# 
+# skill_data <- readxl::read_excel('resume_data.xlsx',
+#                                  sheet = "skills",
+#                                  na = c("", "NA", "na"))
+
+position_data <- read.csv('./data/position_data.csv', stringsAsFactors = F)
+skill_data <- read.csv('./data/skill_data.csv', stringsAsFactors = F)
+```
+
+
+Aside
+================================================================================
+
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r contactinfo}
+# Public contact links only. Do not add private email or phone details here.
+cat('
+- <i class="fa fa-map-marked-alt"></i> Brisbane, Australia
+- <i class="fa fa-github"></i> [github.com/atefero](https://github.com/atefero)
+- <i class="fab fa-linkedin-in"></i> [linkedin.com/in/ati-rostami/](https://www.linkedin.com/in/ati-rostami/)
+')
+```
+
+
+
+```{r download, eval=FALSE, include=FALSE}
+# Add the published PDF URL here after the GitHub repository is ready.
+```
+
+<br>
+
+
+Technology skills {#tech}
+--------------------------------------------------------------------------------
+
+```{r tech, dev.args = list(bg = 'transparent')}
+
+# function from helper_functions.R
+build_skill_bars(skill_data, "Tech")
+
+```
+
+
+Interpersonal skills {#interpersonal}
+--------------------------------------------------------------------------------
+
+```{r interpersonal, dev.args = list(bg = 'transparent')}
+
+# function from helper_functions.R
+build_skill_bars(skill_data, "Interpersonal")
+
+```
+
+Main
+================================================================================
+
+Ati Rostami {#title}
+--------------------------------------------------------------------------------
+
+Research Data Scientist with a PhD in applied mathematics, specialising in mathematical modelling, simulation and Bayesian inference. Experienced in analysing plant growth models, building machine learning models in Python, and communicating findings through research and teaching.
+
+Professional Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r jobs}
+print_section(position_data, 'work')
+```
+
+
+Teaching  {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r training}
+print_section(position_data, 'teaching')
+```
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r education}
+print_section(position_data, 'education')
+```

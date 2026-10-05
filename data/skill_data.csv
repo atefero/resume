@@ -1,0 +1,29 @@
+section,skill,group,group_order
+Tech,Python,Programming,1
+Tech,R,Programming,1
+Tech,MATLAB,Programming,1
+Tech,SQL (T-SQL),Programming,1
+Tech,pandas,Python libraries,2
+Tech,NumPy,Python libraries,2
+Tech,SciPy,Python libraries,2
+Tech,scikit-learn,Python libraries,2
+Tech,matplotlib,Python libraries,2
+Tech,Bayesian inference,Statistical & predictive modelling,3
+Tech,Classification,Statistical & predictive modelling,3
+Tech,Logistic regression,Statistical & predictive modelling,3
+Tech,Gradient boosting,Statistical & predictive modelling,3
+Tech,Scenario analysis,Analysis & validation,4
+Tech,Model validation,Analysis & validation,4
+Tech,Parameter estimation,Analysis & validation,4
+Tech,Uncertainty analysis,Analysis & validation,4
+Tech,Data visualisation,Analysis & validation,4
+Tech,Power BI,Tools,5
+Tech,Excel,Tools,5
+Tech,Git ,Tools,5
+Tech,GitHub,Tools,5
+Interpersonal,Technical communication,Professional strengths,1
+Interpersonal,Workshop facilitation,Professional strengths,1
+Interpersonal,Collaboration,Professional strengths,1
+Interpersonal,Problem solving,Professional strengths,1
+Interpersonal,Attention to detail,Professional strengths,1
+Tech,Machine learning,Statistical & predictive modelling,3

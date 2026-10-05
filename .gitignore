@@ -1,0 +1,15 @@
+# RStudio local state and temporary files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+Thumbs.db
+*_cache/
+*_files/
+*.log
+
+# Private application documents must remain outside this public repository.
+private/
+applications/
+*cover_letter*
