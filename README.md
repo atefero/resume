@@ -2,7 +2,7 @@
 
 Public resume of a Research Data Scientist with a PhD in applied mathematics from Queensland University of Technology. Experience includes mathematical modelling, Bayesian inference, machine learning, data analysis and university teaching.
 
-[View resume](index.html) · [Download PDF](ati_resume.pdf) · [LinkedIn](https://www.linkedin.com/in/ati-rostami/) · [GitHub](https://github.com/atefero)
+[View resume](https://atefero.github.io/resume/) · [Download PDF](ati_resume.pdf) · [LinkedIn](https://www.linkedin.com/in/ati-rostami/) · [GitHub](https://github.com/atefero)
 
 ## Public contact
 
@@ -52,6 +52,3 @@ The resume template was adapted from [Catherine Kim's pagedown resume](https://g
 
 Built with [R](https://www.r-project.org/), [R Markdown](https://rmarkdown.rstudio.com/), [pagedown](https://pagedown.rbind.io/) and [Paged.js](https://pagedjs.org/).
 
-## Reuse of the template
-
-No reuse licence was found in Catherine's supplied project, and GitHub did not identify one in her repository when checked on 5 October 2026. If permission to publish an adapted copy has not already been granted, confirm it with Catherine before publishing the adapted source. Attribution is included, but no new licence has been applied to her template. Third-party packages and embedded resources retain their respective licences.
